@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var obj = {
+			// 轻松购
+			xxx:[{"rimg":"../images/ChMkJ1u7FnSIRiN1AABmRFP64MEAAsWFQN29MgAAGZc175.jpg","rtitle":"华为P20 64GB","rprice":"￥2008"},			
+			{"rimg":"../images/ChMkJlussPaIERhSAADzjtXdA4cAAsF3wKDnvIAAPOm068.jpg","rtitle":"录音师（LUYS） 7.1声道头戴式电竞游戏耳机","rprice":"￥119"},			
+			{"rimg":"../images/ChMkJlugyoWIAKbVAAA6Uk18gdQAArzwQB1dMIAADpq194.jpg","rtitle":"甲骨龙 酷睿 I5 8400 1050TI 4G独显 16G内存","rprice":"￥3999"},
+			{"rimg":"../images/ChMkJ1u7FnSIRiN1AABmRFP64MEAAsWFQN29MgAAGZc175.jpg","rtitle":"华为P20 64GB","rprice":"￥2008"},			
+			{"rimg":"../images/ChMkJlussPaIERhSAADzjtXdA4cAAsF3wKDnvIAAPOm068.jpg","rtitle":"录音师（LUYS） 7.1声道头戴式电竞游戏耳机","rprice":"￥119"},			
+			{"rimg":"../images/ChMkJlugyoWIAKbVAAA6Uk18gdQAArzwQB1dMIAADpq194.jpg","rtitle":"甲骨龙 酷睿 I5 8400 1050TI 4G独显 16G内存","rprice":"￥3999"}],
+			yyy:[
+			{"rrimg":"../images/ChMkJ1nDlbKIORaLAADvR_DdMk0AAgrdgAdQzMAAO9f025.jpg","rrname":"【顺丰包邮】金立S10 6GB+64GB版 移动联通电信4G手机 双卡双待","rricon":"四摄拍照更美，美一拍都清晰"},
+			{"rrimg":"../images/ChMkJlnDhf6IBPsNAAFdnCu52sIAAgrXQPMmMwAAV20702.png","rrname":"【包邮韵达】中兴 Blade A601（全网通）老人智能手机双卡双待","rricon":"5英寸大屏大字体"},
+			{"rrimg":"../images/ChMkJ1nDlryIBHq-AADkg1IDoKEAAgreAJuaWsAAOSb651.jpg","rrname":"【现货包邮】中兴(ZTE)远航 BA603 全网通4G 智能老人手机 双卡双待","rricon":"16G机身内存 智能亲情模式切换"}],
+			// 同城购
+			same_city:[
+				{"redpic":"../images/ChMkJlpldYaIYUgfAACbBg4By8QAAkRZQGLjEUAAJse105.png"},
+				{"redpic":"../images/ChMkJ1pldbCIMgtTAACOTYeyc7wAAkRZQJDU7EAAI5l290.png"},
+				{"redpic":"../images/ChMkJlplde2If3-0AACh9PudtQ4AAkRZQLMUBkAAKIM239.png"}
+			],
+			city_wide:[
+				{"img":"../images/ChMkJ1la9MqIcaCWAACgSNKle-AAAeCvQDjyAgAAKBg873.jpg","name":"小米6 全网通 4G/6GB运行  移动联通电信4G手机【顺丰包邮 送壳膜】","msg":"【现货当天发】骁龙835，6GB大内存，5.15英寸，支持花呗付款！","price1":"￥1859.00","info_price":"￥2299"},
+				{"img":"../images/ChMkJ1la9MqIcaCWAACgSNKle-AAAeCvQDjyAgAAKBg873.jpg","name":"小米6 全网通 4G/6GB运行  移动联通电信4G手机【顺丰包邮 送壳膜】","msg":"【现货当天发】骁龙835，6GB大内存，5.15英寸，支持花呗付款！","price1":"￥1859.00","info_price":"￥2299"},
+				{"img":"../images/ChMkJ1la9MqIcaCWAACgSNKle-AAAeCvQDjyAgAAKBg873.jpg","name":"小米6 全网通 4G/6GB运行  移动联通电信4G手机【顺丰包邮 送壳膜】","msg":"【现货当天发】骁龙835，6GB大内存，5.15英寸，支持花呗付款！","price1":"￥1859.00","info_price":"￥2299"},
+				{"img":"../images/ChMkJ1la9MqIcaCWAACgSNKle-AAAeCvQDjyAgAAKBg873.jpg","name":"小米6 全网通 4G/6GB运行  移动联通电信4G手机【顺丰包邮 送壳膜】","msg":"【现货当天发】骁龙835，6GB大内存，5.15英寸，支持花呗付款！","price1":"￥1859.00","info_price":"￥2299"},
+				{"img":"../images/ChMkJ1la9MqIcaCWAACgSNKle-AAAeCvQDjyAgAAKBg873.jpg","name":"小米6 全网通 4G/6GB运行  移动联通电信4G手机【顺丰包邮 送壳膜】","msg":"【现货当天发】骁龙835，6GB大内存，5.15英寸，支持花呗付款！","price1":"￥1859.00","info_price":"￥2299"},
+			],
+
+			// 智选
+			direct:[
+				{"img":"../images/ChMkJlq7TkSIKpkcAAB9FxDw4_gAAnG5ALQ0csAAH0v344.jpg"},
+				{"img":"../images/ChMkJ1pext-IXANbAAA-ZpxfLoEAAkJbwPPJewAAD5-476.jpg"},
+				{"img":"../images/ChMkJlpex0yIDDkeAAA1H23a3ScAAkJcAB1c8AAADU3882.jpg"},
+				{"img":"../images/ChMkJlpeyMiIFkoOAAA5znsauvMAAkJcwB49NEAADnm254.jpg"},
+			],
+
+			// 品牌精选
+			brand:[
+				{"img":"../images/ChMkJlsiF-KICAtpAAEVj7cfWEcAApCPANnA4QAARWn470.jpg"},
+				{"img":"../images/ChMkJlsiF-KICAtpAAEVj7cfWEcAApCPANnA4QAARWn470.jpg"},
+				{"img":"../images/ChMkJlsiF-KICAtpAAEVj7cfWEcAApCPANnA4QAARWn470.jpg"},
+				{"img":"../images/ChMkJlsiF-KICAtpAAEVj7cfWEcAApCPANnA4QAARWn470.jpg"},
+			],
+
+			// 家电狂欢
+			happy:[
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+				{"img":"../images/ChMkJ1rEMZGIccKEAAAGPaa-qUkAAnVRgLOLd4AAAZV657.jpg"},
+			],
+			happy_r:[
+				{"title":"彩电"},
+				{"title":"冰箱"},
+				{"title":"洗衣机"},
+				{"title":"厨卫"},
+				{"title":"小家电"},
+			],
+			happy_r_b:[
+				{"img":"../images/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg"},
+				{"img":"../images/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg"},
+				{"img":"../images/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg"},
+				{"img":"../images/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg"},
+				{"img":"../images/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg"},
+				{"img":"../images/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg"},
+			],
+
+			// 本周热销
+			week:[
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+				{"img":"../images/ChMkJlnkU9yIUJJXAAWXafd-NugAAhSywProYsABZeB678.png"},
+			],	
+		}
+		var obj = JSON.stringify(obj);
+		document.write(obj);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import "common";
+body{
+	font-size:12px;
+	color:#333;
+}
+.foot-box{
+	height:180px;
+	background:#f7f7f7;
+}
+.foot{
+	width:1200px;
+	height:180px;
+	padding:20px 0;
+	margin:0 auto;
+	dl{
+		width:175px;
+		float:left;
+		dt{
+			font-size:14px;
+			color:#666;
+			font-weight:bold;
+			height:28px;
+		}
+		dd{
+			height:28px;
+			a{
+				color:#666;
+			}
+			a:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	.hotline{
+		width: 210px;
+		float: left;
+    	padding: 0 0 0 60px;
+		background: url(http://icon.zol-img.com.cn/newshop/shop/index/footer.png) no-repeat;
+    	background-position: 0 -90px;
+	}
+	.coorperation{
+		width: 145px;
+		float: left;
+    	padding: 0 0 0 60px;
+		background: url(http://icon.zol-img.com.cn/newshop/shop/index/footer.png) no-repeat;
+	    background-position: 0 -215px;
+	    .btn{
+	    	display: block;
+		    margin: 6px 0 0;
+		    width: 80px;
+		    height: 26px;
+		    line-height:26px;
+		    color: #fff;
+		    text-align: center;
+		    background: #f33;
+		    border-radius: 2px;
+	    }
+	    .btn:hover{
+	    	background-color:#c40000;
+	    	text-decoration:none;
+	    }
+	}
+}

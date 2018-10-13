@@ -1,0 +1,420 @@
+@import "common";
+body{
+	font-size:12px;
+	color:#333;
+	font-family:"Microsoft YaHei";
+}
+// 头部
+#topbox{
+	height:30px;
+	background:#f5f5f5;
+	.top{
+		width:1200px;
+		height:30px;
+		margin:0 auto;
+		.top-index{
+			float:left;
+			line-height:30px;
+			.top-index-home{
+				padding:0 20px 0 0;
+			}
+			.top-index-login{
+				padding:0 20px 0 0;
+				color:#666;
+			}
+		}
+		.top-right{
+			float:right;
+			margin:0 -10px 0 0;
+			li{
+				float:left;
+				margin:0 10px;
+				height:30px;
+				line-height:30px;
+				a{
+					color:#666;
+					display:inline-block;
+					text-decoration:none;
+				}
+			}
+			.zc-my-center{
+				margin:0;
+			}	
+			.zc-hd {
+				position:relative;
+				padding:0 23px 0 10px;
+				.ico{
+					position:absolute;
+					top:13px;
+					right:10px;
+					width:7px;
+					height:4px;
+					background: url(http://icon.zol-img.com.cn/newshop/shop/index/topbar_ico.png) no-repeat;
+					background-position:0 -45px;
+				}
+			}
+			.zc-my-center-bd{
+				position: absolute;
+			    top: 29px;
+			    left: 0;
+			    padding: 3px 9px;
+			    width: 88px;
+			    border: 1px solid #ededed;
+			    background: #fff;
+			}
+			.zc-mobile {
+				magrin:0;
+				.zc-hd {
+					padding:0 23px 0 25px;
+				    background: url(http://icon.zol-img.com.cn/newshop/shop/index/topbar_ico.png) no-repeat;
+					background-position:0 0;
+				}
+				.zc-mobile-bd{
+					position: absolute;
+				    top: 29px;
+				    left: 0;
+				    padding: 20px;
+				    width: 130px;
+				    height: 130px;
+				    border: 1px solid #ededed;
+				    background: #fff;
+				}
+			}
+			.zc-service-tel{
+				display: none;
+			    position: absolute;
+			    top: 29px;
+			    right: 0;
+			    padding: 3px 9px;
+			    width: 80px;
+			    border: 1px solid #ededed;
+			    font: 12px/28px arial;
+			    text-align: right;
+			    background: #fff;
+			}
+		}
+	}
+}
+
+// logo部分
+#header{
+	height:60px;
+	padding:30px 0;
+	.head{
+		width:1200px;
+		height:60px;
+		margin:0 auto;
+		h1{
+			float:left;
+			a{
+				display:block;
+				width:130px;
+				height:60px;
+				background:url("../images/logo.png") no-repeat; 
+				font-size:0;
+			}
+		}
+		
+		.city{
+			float:left;
+			margin:10px 0 0 20px;
+			border:1px solid #e6e6e6;
+			position:relative;
+			zoom:1;
+			.city-name{
+				display:block;
+				height:26px;
+				font-size:14px;
+				line-height:26px;
+				padding:0 26px 0 12px;
+				cursor:pointer;
+				.icon{
+					position:absolute;
+					right:12px;
+					top:11px;
+					width:9px;
+					height:5px;
+					background:url("http://icon.zol-img.com.cn/newshop/shop/index/head.png") no-repeat;
+					background-position:-28px -155px;
+				}
+			}
+			.city-list{
+				display: none;
+			    width: 180px;
+			    padding: 8px 0;
+			    position: absolute;
+			    left: -1px;
+			    top: 25px;
+			    background-color: #fff;
+			    z-index: 4;
+			    border: 1px solid #e6e6e6;
+			}
+		}
+		.entry{
+			float: right;
+    		margin: 0 0 0 65px;
+    		padding: 17px 0 0;
+    		a{
+    			position: relative;
+			    zoom: 1;
+			    float: right;
+			    margin: 0 0 0 20px;
+			    font-size: 14px;
+			    color: #333;
+			    font-family:"Microsoft YaHei";
+    		}
+    		a:hover{
+    			color:red;
+    		}
+    		.car {
+				padding: 0 0 0 24px;
+	    		.ico{
+	    			position:absolute;
+	    			top:0;
+	    			left: 0;
+				    width: 18px;
+				    height: 18px;
+				    background:url("http://icon.zol-img.com.cn/newshop/shop/index/head.png") no-repeat;
+				    background-position: 0 -211px;
+	    		}
+	    		.number{
+					position: absolute;
+				    left: 12px;
+				    top: -7px;
+				    padding: 0 3px;
+				    height: 13px;
+				    font-size: 12px;
+				    color: #fff;
+				    background: #f33;
+				    border-radius: 10px;
+	    		}
+    		}
+    		.car:hover .ico{
+				background-position:-32px -211px;
+    		}
+    		.coupon{
+    			padding: 0 0 0 27px;
+    			.ico{
+    				position:absolute;
+    				top: 0;
+    				left:0;
+				    width: 22px;
+				    height: 18px;
+				    background:url("http://icon.zol-img.com.cn/newshop/shop/index/head.png") no-repeat;
+				    background-position: 0 -190px;
+    			}
+    		}
+    		 .coupon:hover .ico{ 
+    		 	background-position:-28px -190px;
+    		 }
+    		.order{
+    			padding: 0 0 0 28px;
+    			.ico{
+    				position:absolute;
+    				top:0;
+    				left:0;
+				    width: 20px;
+				    height: 20px;
+				    background:url("http://icon.zol-img.com.cn/newshop/shop/index/head.png") no-repeat;
+				    background-position: 0 -167px;
+    			}
+    		}
+    		.order:hover .ico{ 
+    			background-position:-30px -167px;
+    		}
+		}
+		.search-box{
+			float:right;
+			margin:7px 0 0 0;
+			.search{
+				    position: relative;
+				    zoom: 1;
+				    width: 536px;
+				    height: 32px;
+				    border: 2px solid #ec3639;
+				.search-text{
+					padding: 6px 10px;
+				    width: 441px;
+				    height: 20px;
+				    font-size: 14px;
+				    font-family:"Microsoft YaHei";
+				    color: #666;
+				    border: 0 none;
+				    outline: 0 none;
+				}
+				.search-btn{
+					width:75px;
+					height:32px;
+					position:absolute;
+					top:0;
+					right:0;
+					border:0 none;
+					color:#fff;
+					font-size:16px;
+					background:#ec3639;
+					cursor:pointer;
+				}
+				.search-hot-words{
+					position: absolute;
+				    top: 7px;
+				    right: 85px;
+				    a{
+				    	display: inline-block;
+						margin: 0 0 0 5px;
+						padding: 0 5px;
+						font-size: 12px;
+						background: #eee;
+						color: #757575;
+						transition: all 0.2s;
+					}
+					a:hover{
+						background:#ec3639; 
+						color:#fff; 
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 导航栏
+.nav-box{
+	height:40px
+}
+.nav{
+	width:1200px;
+	height:40px;
+	margin:0 auto;
+	position:relative;
+	.nav-ul{
+		padding:0 0 0 180px;
+		li{
+		float: left;
+	    padding: 0 30px 0 0;
+	    height: 39px;
+	    font-size: 18px;
+		}
+		a{
+			loat: left;
+   		 	padding: 0 10px;
+    		color: #333;
+		}
+		a:hover{
+			color:#f33;
+		}
+		.current a{
+			color:#f33;
+		}
+	}
+	.nav-classify{
+		clear:both;
+		float: left;
+	    position: relative;
+	    margin: -39px 0 0;
+	    width: 160px;
+	    height: 39px;
+	    background-color: #ec3639;
+	    .nav-classify-header{
+			padding: 8px 0 0 52px;
+	    	font-size: 16px;
+	    	font-family:"Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+	    	color: #fff;
+	    	cursor: pointer;
+	    	.ico{
+	    		position: absolute;
+			    top: 14px;
+			    left: 26px;
+			    width: 12px;
+			    height: 10px;
+			    background:url("http://icon.zol-img.com.cn/newshop/shop/index/head.png") no-repeat;
+			    background-position: 0 -154px;
+	    	}
+		}
+		.nav-classify-body{
+			width:160px;
+			position: absolute;
+		    top: 39px;
+		    left: 0;
+		    width: 160px;
+		    background-color: #fff;
+		    .nav-items{
+		    	position: relative;
+			    height: 400px;
+			    overflow: hidden;
+			    background-color: #454545;
+		     .item{
+		     	position:relative;
+				height:54px;
+				margin:-1px 10px 0;
+				padding:0 0 0 42px;
+				border-top: 1px solid #4d4d4d;
+				h3{
+					position:relative; 
+					font-size:16px;
+					height:54px;
+					line-height:54px;
+					a{
+						color:#fff;
+					}
+					i{
+						position: absolute;
+					    top: 23px;
+					    right: 12px;
+					    width: 6px;
+					    height: 11px;
+					    background: url(http://icon.zol-img.com.cn/newshop/shop/index/head.png) no-repeat;
+					    background-position: -44px -154px;
+					}
+				}
+				i{
+					position:absolute;
+					background: url(http://icon.zol-img.com.cn/newshop/shop/index/head.png) no-repeat;
+				}
+				.icon-01{
+					left: 16px;
+				    top: 17px;
+				    width: 13px;
+				    height: 18px;
+				    background-position: 0 0;
+				}
+				.icon-02{
+					left: 12px;
+				    top: 20px;
+				    width: 20px;
+				    height: 16px;
+				    background-position: 0 -21px;
+				}
+				.icon-03{
+					left: 13px;
+				    top: 19px;
+				    width: 19px;
+				    height: 18px;
+				    background-position: 0 -133px;
+				}
+				.icon-04{
+					left: 12px;
+				    top: 17px;
+				    width: 20px;
+				    height: 18px;
+				    background-position: 0 -40px;
+				}
+				.icon-05{
+					left: 15px;
+				    top: 11px;
+				    width: 15px;
+				    height: 27px;
+				    background-position: 0 -61px;
+				}
+				.icon-06{
+					left: 13px;
+				    top: 18px;
+				    width: 19px;
+				    height: 17px;
+				    background-position: 0 -91px;
+				}
+		     }
+		    }
+		}
+	}
+}
