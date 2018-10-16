@@ -2,6 +2,7 @@
 body{
 	font-size:12px;
 	color:#333;
+	background:#fafafa;
 }
 // 顶部logo
 .logobox{
@@ -48,10 +49,10 @@ body{
 
 // 中间注册
 .registerbox{
-	height:770px;
+	height:640px;
 	.register{
 		width:990px;
-		height:770px;
+		height:640px;
 		margin:0 auto;
 		border:1px solid #e6e6e6;
 		.top{
@@ -63,7 +64,7 @@ body{
 			background:#fafafa;
 		}
 		.center{
-			height:710px;
+			height:560px;
 			background:#fff;
 			.left{
 				width:500px;
@@ -125,7 +126,13 @@ body{
 							right:120px;
 							width:100px;
 							height:40px;
-							background:red;
+							background:#87ceeb;
+							color:yellow;
+							font-family:"微软雅黑";
+							line-height:40px;
+							font-size:16px;
+							letter-spacing: 6px;
+							text-align:center;
 						}
 						#img{
 							position:absolute;
@@ -148,9 +155,11 @@ body{
 						}
 						.warn{
 							position: absolute;
+							width:170px;
 						    top: 0;
 						    left: 383px;
 							color: #ff3333;
+							margin-left:10px;
 							padding: 11px 0 0 20px;
 							background:url(https://login.zol.com/image/login-bg.png) no-repeat;
 							background-position: -155px -184px;
@@ -164,6 +173,33 @@ body{
 
 					}
 				}
+				.protocol{
+					float:right;
+					margin-right:100px;
+					input{
+						margin-right:4px;
+						vertical-align:middle;
+					}
+					a{
+						color:#134ba0;
+					}
+					a:hover{
+						color:#cc0000;
+						text-decoration:underline;
+					}
+				}
+				.button{
+				    margin: 20px 0 0 83px;
+				    width: 290px;
+				    height: 40px;
+				    font-size:14px;
+				    color: #fff;
+				    text-align: center;
+				    border: 0 none;
+				    background-position: 0 0;
+				    cursor: pointer;
+					background:#c71f1f;
+				}
 			}
 			.right{
 				float:left;
@@ -173,6 +209,9 @@ body{
 				line-height:25px;
 			    padding: 0 80px 0 25px;
 			    border-left: 1px solid #f5f5f5;
+			    a:hover{
+			    	opacity:.8;
+			    }
 			    p:nth-child(1){
 			    	margin-top:20px;
 			    	a{
@@ -211,6 +250,36 @@ body{
 					background:url(https://login.zol.com/image/login-bg.png) 0 -111px no-repeat;
 				}
 			}
+		}
+	}
+}
+
+// 底部
+.footer{
+	margin-top:30px;
+	height:100px;
+	border-top:1px solid #e6e6e6;
+	.foot{
+		width:990px;
+		height:100px;
+		margin:0 auto;
+		.about{
+			clear:both;
+			float:left;
+			li{
+				float:left;
+				a{
+					margin:0 10px;
+					color:#666;
+				}
+				a:hover{
+					color:#cc0000;
+					text-decoration:underline;
+				}
+			}
+		}
+		.copyright{
+			float:right;
 		}
 	}
 }

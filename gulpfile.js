@@ -9,6 +9,7 @@ gulp.task("copy-html", function(){
 	.pipe(connect.reload());
 })
 
+
 /*
 	拷贝图片
 */
@@ -128,7 +129,7 @@ gulp.task("data", function(){
 /*
 	建立工程的任务
 */
-gulp.task("build", ["copy-html","common","top", "foot", "scss1", "scss2", "scss3", "scss4", "scss5", "scss6", "images", "scripts", "data"], function(){
+gulp.task("build", ["copy-html", "common","top", "foot", "scss1", "scss2", "scss3", "scss4", "scss5", "scss6", "images", "scripts", "data"], function(){
 	console.log("编译成功");
 });
 

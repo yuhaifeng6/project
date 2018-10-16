@@ -3,8 +3,546 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/list.css">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/list.js"></script>
 </head>
 <body>
-	
+	<!-- 头部 -->
+<div id = "topbox">
+		<div class="top">
+			<div class="top-index">
+				<span class="top-index-home"><a href="http://www.zol.com">商城首页</a></span>
+				<span class="top-index-login">Hi~欢迎来到Z商城，请<a href="#">登录</a></span>
+				<span class="top-index-register">
+					<a href="#">免费注册</a>
+				</span>
+			</div>
+			<ul class="top-right">
+				<li><a href="#">我的订单</a></li>
+				<li class="zc-my-center"><a href="#" class="zc-hd">买家中心<i class="ico"></i></a>
+				<div class="zc-my-center-bd" id="zc-my-center-bd" style="display: none;"><a href="#" style="display:none;">我的优惠券&nbsp;&nbsp;<em>8</em></a><a href="#">关注的店铺&nbsp;&nbsp;<em id="focusShopNum">30</em></a><a href="#">关注的商品&nbsp;&nbsp;<em id="focusGoodsNum">48</em></a>                </div>
+				</li>
+				<li><a href="">购物车0件</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li>|</li>
+				<li class="zc-mobile"><a href="#" class="zc-hd">手机商城<i class="ico"></i></a><div class="zc-mobile-bd" id="zc-mobile-bd" style="display: none;"><img src="http://icon.zol-img.com.cn/zol_shop_logo/shop_wechat.png" width="130" height="130"></div></li>
+				<li><a href="">中关村在线</a></li>
+				<li><a href="">招商合作</a></li>
+				<li class="lianxikefu"><a href="" class="zc-hd">联系客服<i class="ico"></i></a><div class="zc-service-tel">400-688-1999</div></li>
+			</ul>
+		</div>
+</div>
+<!-- logo部分 -->
+<div id = "header">
+	<div class= 'head'>
+		<h1><a href="http://www.zol.com/">ZOL商城</a></h1>
+		<div class = "city">
+			<span class="city-name">
+				青岛
+				<em class="icon"></em>
+			</span>
+			<ul class="city-list">
+              <li><a href="#">北京</a></li>
+              <li><a href="#">成都</a></li>
+              <li><a class="cur">青岛</a></li>
+              <li><a href="#">西安</a></li>
+              <li><a href="#">郑州</a></li>
+              <li><a href="#">石家庄</a></li>
+              <li><a href="#">平顶山</a></li>
+              <li><a href="#">上海</a></li>
+              <li><a href="#">德阳</a></li>
+              <li><a href="#">邢台</a></li>
+              <li><a href="#">承德</a></li>
+              <li><a href="#">驻马店</a></li>
+              <li><a href="#">安阳</a></li>
+              <li><a href="#">新乡</a></li>
+			  <li><a href="#">宝鸡</a></li>
+              <li><a href="#">全国</a></li>
+            </ul>
+		</div>
+		<div class="entry">
+			<a href="#" class="car">
+				购物车
+				<i class="ico"></i>
+				<em class="number">0</em>
+			</a>
+			<a href="#" class="coupon">
+				我的优惠劵
+				<i class="ico"></i>
+			</a>
+			<a href="#" class="order">
+				我的订单
+				<i class="ico"></i>
+			</a>
+		</div>
+		<div class="search-box">
+			<div class="search">
+				<input name="keyword" type="text" class="search-text" placeholder="找找您想要的商品" value="">
+				<input type="submit" value="搜索" class="search-btn">
+				<div class="search-hot-words" id="hot-words">
+					<a href="#" target="_blank" title="戴尔限时促销">戴尔限时促销</a>
+					<a href="#" target="_blank" title="三星Note8">三星Note8</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 导航 -->
+<div class="nav-box">
+	<div class="nav">
+		<ul class="nav-ul">
+			<li class="current"><a href="">首页</a></li>
+			<li><a href="">团购</a></li>
+			<li><a href="">电子竞技</a></li>
+			<li><a href="">本地优选</a></li>
+			<li><a href="">家电优选</a></li>
+		</ul>
+		<div class="nav-classify">
+			<div class="nav-classify-header">
+				全部分类
+				<i class="ico"></i>
+			</div> 
+			<div class="nav-classify-body" style="display: none;">
+				<div class="nav-items" id="side">
+					<div class="item">
+						<h3>
+							<a href="" class="col">手机</a>
+							<i></i>
+						</h3>
+						<i class="icon-01"></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="" class="col">电脑</a>
+							<i></i>
+						</h3>
+						<i class="icon-02"></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="" class="col">DIY</a>
+							<i></i>
+						</h3>
+						<i class="icon-03"></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="" class="col">数码</a>
+							<i></i>
+						</h3>
+						<i class="icon-04"></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="" class="col">外设</a>
+							<i></i>
+						</h3>
+						<i class="icon-05"></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="" class="col">智能</a>
+							<i></i>
+						</h3>
+						<i class="icon-06"></i>
+					</div>
+				</div>
+				<div class="nav-items-hide">
+					<div class="hide" style="display: none;">
+						<span><a href="">手机</a></span>
+						<span><a href="">移动电源</a></span>
+						<span><a href="">蓝牙耳机</a></span>
+						<span><a href="">手机贴膜</a></span>
+						<span><a href="">保护套</a></span>
+						<span><a href="">数据线</a></span>
+						<span><a href="">充电器</a></span>
+						<span><a href="">手机维修</a></span>
+						<div class="hide-pic">
+							<a href="">
+								<img src="images/ChMkJ1p5VryIBoQ7AABckDBEB1sAAksGAAXwLIAAFyo173.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="hide" style="display: none;">
+						<span><a href="">笔记本电脑</a></span>
+						<span><a href="">游戏本</a></span>
+						<span><a href="">超极本</a></span>
+						<span><a href=""> 二合一平板电</a></span>
+						<span><a href="">平板电脑</a></span>
+						<span><a href=""><br>品牌整机</a></span>
+						<span><a href="">一体机</a></span>
+						<span><a href="">笔记本配件</a></span>
+						<span><a href="">笔记本电池</a></span>
+						<span><a href="">笔记本包</a></span>
+						<div class="hide-pic">
+							<a href="">
+								<img src="images/ChMkJlngYZiIViJ_AABfbfycT5IAAhNigCrnVgAAF-F050.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="hide" style="display: none;">
+						<span><a href="">DIY主机</a></span>
+						<span><a href="">团购钜惠</a></span>
+						<span><a href="">硬盘</a></span>
+						<span><a href="">电源</a></span>
+						<span><a href="">散热器</a></span>
+						<span><a href="">CPU</a></span>
+						<span><a href=""><br>机箱</a></span>
+						<span><a href="">主板</a></span>
+						<span><a href="">内存</a></span>
+						<span><a href="">固态硬盘</a></span>
+						<span><a href="">显卡</a></span>
+						<div class="hide-pic">
+							<a href="">
+								<img src="images/ChMkJlpmo2eIUBQ1AAB5VQgAneUAAkShAJEIfMAAHlt073.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="hide" style="display: none;">
+						<span><a href="">手机</a></span>
+						<span><a href="">移动电源</a></span>
+						<span><a href="">蓝牙耳机</a></span>
+						<span><a href="">手机贴膜</a></span>
+						<span><a href="">保护套</a></span>
+						<span><a href="">数据线</a></span>
+						<span><a href="">充电器</a></span>
+						<span><a href="">手机维修</a></span>
+						<div class="hide-pic">
+							<a href="">
+								<img src="images/ChMkJ1p5VryIBoQ7AABckDBEB1sAAksGAAXwLIAAFyo173.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="hide" style="display: none;">
+						<span><a href="">笔记本电脑</a></span>
+						<span><a href="">游戏本</a></span>
+						<span><a href="">超极本</a></span>
+						<span><a href=""> 二合一平板电</a></span>
+						<span><a href="">平板电脑</a></span>
+						<span><a href=""><br>品牌整机</a></span>
+						<span><a href="">一体机</a></span>
+						<span><a href="">笔记本配件</a></span>
+						<span><a href="">笔记本电池</a></span>
+						<span><a href="">笔记本包</a></span>
+						<div class="hide-pic">
+							<a href="">
+								<img src="images/ChMkJlngYZiIViJ_AABfbfycT5IAAhNigCrnVgAAF-F050.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="hide" style="display: none;">
+						<span><a href="">DIY主机</a></span>
+						<span><a href="">团购钜惠</a></span>
+						<span><a href="">硬盘</a></span>
+						<span><a href="">电源</a></span>
+						<span><a href="">散热器</a></span>
+						<span><a href="">CPU</a></span>
+						<span><a href=""><br>机箱</a></span>
+						<span><a href="">主板</a></span>
+						<span><a href="">内存</a></span>
+						<span><a href="">固态硬盘</a></span>
+						<span><a href="">显卡</a></span>
+						<div class="hide-pic">
+							<a href="">
+								<img src="images/ChMkJlpmo2eIUBQ1AAB5VQgAneUAAkShAJEIfMAAHlt073.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<!-- 中间 -->
+<div class="crumbs_bar_box">
+	<div class="crumbs_bar">
+		<div class="total">
+			共
+			<em>348</em>
+			件
+		</div>
+		<ul class="crumbs_nav">
+			<li><a href="">首页</a> &nbsp;></li>
+			<li><a href="" class="photo">相机/摄像机</a> &nbsp;></li>
+			<li><a href="" class="num_photo">数码相机</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 筛选 -->
+<div class="selectbox">
+	<div class="select">
+		<div class="brand">
+			<dl><a href=""></a>
+				<dt>品牌：</dt>
+				<div class="list">
+					<dd><a href="">佳能</a></dd>
+					<dd><a href="">索尼</a></dd>
+					<dd><a href="">尼康</a></dd>
+					<dd><a href="">卡西欧</a></dd>
+					<dd><a href="">徕卡</a></dd>
+				</div>
+			</dl>
+		</div>
+		<div class="brand">
+			<dl><a href=""></a>
+				<dt>价格：</dt>
+				<div class="list">
+					<dd><a href="">1000元以下</a></dd>
+					<dd><a href="">1000-2000元</a></dd>
+					<dd><a href="">2000-3000元</a></dd>
+					<dd><a href="">3000-5000元</a></dd>
+					<dd><a href="">5000-10000元</a></dd>
+					<dd><a href="">10000元以上</a></dd>
+				</div>
+			</dl>
+		</div>
+		<div class="brand">
+			<dl><a href=""></a>
+				<dt>产品类型：</dt>
+				<div class="list">
+					<dd><a href="">单反</a></dd>
+					<dd><a href="">入门</a></dd>
+					<dd><a href="">中端</a></dd>
+					<dd><a href="">高端</a></dd>
+					<dd><a href="">微单</a></dd>
+					<dd><a href="">单电</a></dd>
+					<dd><a href="">消费</a></dd>
+					<dd><a href="">卡片</a></dd>
+					<dd><a href="">长焦</a></dd>
+					<dd><a href="">广角</a></dd>
+					<dd><a href="">专业</a></dd>
+					<dd><a href="">三防</a></dd>
+				</div>
+			</dl>
+		</div>
+		<div class="brand1" style="display: none">
+			<dl><a href=""></a>
+				<dt>传感器尺寸：</dt>
+				<div class="list">
+					<dd><a href="">全画幅</a></dd>
+					<dd><a href="">全画幅</a></dd>
+					<dd><a href="">全画幅</a></dd>
+					<dd><a href="">全画幅</a></dd>
+					<dd><a href="">全画幅</a></dd>
+					<dd><a href="">全画幅</a></dd>
+				</div>
+			</dl>
+		</div>
+		<div class="brand1" style="display: none">
+			<dl><a href=""></a>
+				<dt>有效像素：</dt>
+				<div class="list">
+					<dd><a href="">3600万以上</a></dd>
+					<dd><a href="">2400-3600万</a></dd>
+					<dd><a href="">3600万以上</a></dd>
+					<dd><a href="">2400-3600万</a></dd>
+					<dd><a href="">3600万以上</a></dd>
+					<dd><a href="">2400-3600万</a></dd>
+				</div>
+			</dl>
+		</div>
+		<div class="brand1" style="display: none">
+			<dl><a href=""></a>
+				<dt>光学变焦</dt>
+				<div class="list">
+					<dd><a href="">40倍以上</a></dd>
+					<dd><a href="">20-40倍</a></dd>
+					<dd><a href="">40倍以上</a></dd>
+					<dd><a href="">20-40倍</a></dd>
+					<dd><a href="">40倍以上</a></dd>
+					<dd><a href="">20-40倍</a></dd>
+				</div>
+			</dl>
+		</div>
+		<div class="show_more">
+			更多选项
+		</div>
+	</div>
+</div>
+
+<!-- 主要部分 -->
+<div class="mainbox">
+	<div class="main">
+		<div class="top">
+			<ul class="toolbar">
+				<li style="background: #fff;"><a href="" style="color: #cc0000">默认</a></li>
+				<li><a href="">高人气</a></li>
+				<li><a href="">高销量</a></li>
+				<li><a href="">价格由低到高</a></li>
+				<li><a href="">价格由高到低</a></li>
+				<li style="position: relative;" id="place">
+					<a href="">发货地</a>
+					<div class="city" style="display: none;">
+						<dl>
+							<dt>华北</dt>
+							<dd><a href="">北京</a></dd>
+							<dd><a href="">天津</a></dd>
+							<dd><a href="">河北</a></dd>
+							<dd><a href="">山西</a></dd>
+							<dd><a href="">内蒙</a></dd>
+							<dd><a href="">山东</a></dd>
+						</dl>
+						<dl>
+							<dt>华东</dt>
+							<dd><a href="">上海</a></dd>
+							<dd><a href="">江苏</a></dd>
+							<dd><a href="">浙江</a></dd>
+							<dd><a href="">安徽</a></dd>
+							<dd><a href="">江西</a></dd>
+						</dl>
+						<dl>
+							<dt>华中</dt>
+							<dd><a href="">河南</a></dd>
+							<dd><a href="">湖北</a></dd>
+							<dd><a href="">湖南</a></dd>
+						</dl>
+						<dl>
+							<dt>华南</dt>
+							<dd><a href="">福建</a></dd>
+							<dd><a href="">广东</a></dd>
+							<dd><a href="">广西</a></dd>
+							<dd><a href="">海南</a></dd>
+						</dl>
+						<dl>
+							<dt>东北</dt>
+							<dd><a href="">辽宁</a></dd>
+							<dd><a href="">吉林</a></dd>
+							<dd><a href="">黑龙江</a></dd>
+						</dl>
+						<dl>
+							<dt>西北</dt>
+							<dd><a href="">陕西</a></dd>
+							<dd><a href="">甘肃</a></dd>
+						</dl>
+						<dl>
+							<dt>西南</dt>
+							<dd><a href="">重庆</a></dd>
+							<dd><a href="">四川</a></dd>
+						</dl>
+					</div>
+				</li>
+				<li><a href="">团购</a></li>
+				<li><a href="">店铺促销</a></li>
+			</ul>
+			<div class="mini-page">
+				<em>1/18</em>
+				<span class="pre"></span>
+				<i class="next"></i>
+			</div>
+		</div>
+		<ul class="commodity">
+			<li>
+				<a href="">
+					<img src="images/Cg-4WVU2BAGIPZBRAAIpNMAv7r4AAB_KgFFL8oAAilM284.jpg" alt="" style="width: 200px;height: 200px;">
+				</a>
+				<p class="title">
+					<a href="">Canon佳能 EOS-1D X(单机)全画幅单反相机、佳能1DX单反相机、更完善的售后服务、被信任是一种快乐！</a>
+				</p>
+				<p class="price">￥30999.00</p>
+				<p class="volume">
+					<span class="v-left">
+						销售数:1
+					</span>
+					<span class="v-right">
+						评价数:0
+					</span>
+				</p>
+				<div class="shop-info">
+					<p class="shop-name">
+						<a href="">华晨数码专营店</a>
+					</p>
+					<p class="shop-volume" style="display: block">
+						店铺总成交<em>4465</em>笔
+					</p>
+				</div>
+				<div class="attention" style="display: block;">
+					+ 关注
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- 底部 -->
+	<div class="foot-box">
+		<div class="foot">
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="">账号注册</a></dd>
+				<dd><a href="">购物流程</a></dd>
+				<dd><a href="">付款方式</a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a href="">先行赔付</a></dd>
+				<dd><a href="">退款退货流程</a></dd>
+				<dd><a href="">投诉举报</a></dd>
+			</dl>
+			<dl>
+				<dt>商城保障</dt>
+				<dd><a href="">正品保障</a></dd>
+				<dd><a href="">物流配送</a></dd>
+				<dd><a href="">24小时发货</a></dd>
+				<dd><a href="">发票保障</a></dd>
+			</dl>
+			<dl>
+				<dt>商家服务</dt>
+				<dd><a href="">商家中心</a></dd>
+			</dl>
+			<dl class="hotline">
+				<dt>400-688-1999</dt>
+				<dd>工作日 9:00 - 18:00</dd>
+			</dl>
+			<dl class="coorperation">
+				<dt>招商合作</dt>
+				<dd>
+					<p>助力3C零售商互联网转型</p>
+					<p>开启新零售时代全新旅程</p>
+					<a href="#" class="btn" target="_blank">
+						<span>查看详细</span>>
+					</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+<!-- 右边侧边栏 -->
+<div class="suspand">
+	<div class="su_left">
+		<ul class="le">
+			<a href="" class="item"><li class="le1"></li></a>
+			<a href="" class="item"><li class="le2"></li></a>
+			<a href="" class="item">
+				<li class="le3">
+					<div class="zero">
+						0
+					</div>
+				</li>
+			</a>
+			<a href="" class="item"><li class="le4"></li></a>
+		</ul>
+		<!-- 锚点 -->
+		<a href="#" class="bo"></a>
+	</div>
+	<div class="su_right" id="right">
+		<ul class="ri">
+			<li class="ri1 item1">
+					我的订单
+			</li>
+			<li class="ri2 item1">
+					我的足迹
+			</li>
+			<li class="ri3 item1">
+					购物车
+			</li>
+			<li class="ri4 item1">
+					优惠券
+			</li>
+		</ul>
+	</div>
+</div>
 </body>
 </html>

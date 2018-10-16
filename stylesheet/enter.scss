@@ -1,0 +1,262 @@
+@import "common";
+body{
+	font-size:12px;
+	color:#333;
+	background:#fafafa;
+}
+// 顶部logo
+.logobox{
+	height:94px;
+	margin-top:50px;
+	.logo{
+		width:990px;
+		height:94px;
+		margin:0 auto;
+		.logo_left{
+			padding-top:20px;
+			float:left;
+			a{
+				float:left;
+			}
+			span{
+				height:40px;
+				line-height:40px;
+				border-left:1px solid #e6e6e6;
+				margin:10px 0 0 8px;
+				padding-left:10px;
+				font-size:14px;
+				color:#666;
+				float:left;
+			}
+		}
+		.logo_right{
+			font-size:14px;
+			height:62px;
+			line-height:62px;
+			float:right;
+			margin-top:20px;
+			a{
+				color:#c00;
+				padding:0 7px;
+			}
+			a:hover{
+				background:#cd1f1f;
+				color:#fff;
+			}
+		}
+	}
+}
+
+// 中间
+.centerbox{
+	height:352px;
+	.center{
+		width:990px;
+		height:352px;
+		margin:0 auto;
+		border:1px solid #e6e6e6;
+		.left{
+			float:left;
+		}
+		.right{
+			width:382px;
+			height:352px;
+			float:left;
+			padding-left:85px;
+			background:#fff;
+			position:relative;
+			.login_head{
+				height:35px;
+				width:290px;
+				position:relative;
+				padding:20px 0 0;
+				border-bottom:2px solid #e6e6e6;
+				h3{
+					display: block;
+				    width: 50%;
+				    float: left;
+				    height: 35px;
+				    overflow: hidden;
+				    font-size: 18px;
+				    color: #666;
+				    text-align: center;
+				    margin-bottom: -2px;
+				    cursor: pointer;
+				}
+				.login{
+					border-bottom:1px solid #de0000;
+				}
+			}	
+			.login_body{
+				input{
+					width:290px;
+					height:40px;
+					padding-left:4px;
+					margin-top:10px;
+					outline:none;
+					border:1px solid #cccccc;
+				}
+				input:nth-child(1){
+					margin-top:25px;
+				}
+				.mobile{
+					padding:10px 0 10px;
+					.dt{
+						float:left;
+						color:#666;
+						padding: 0 0 0 17px;
+						background:url(https://login.zol.com/image/shop_login_bg.png) no-repeat -276px -137px;
+						background-position: -280px -113px;
+						line-height: 28px;
+					}
+					.dt:hover{
+						color:#cc0000;
+						text-decoration:underline;
+					}
+					.forget{
+						float:right;
+						color:#134ba0;
+						padding-right:85px;
+					}
+					.forget:hover{
+						color:#cc0000;
+						text-decoration:underline;
+					}
+				}
+				.button{
+					width:290px;
+					height:40px;
+					text-align:center;
+					line-height:40px;
+					cursor:pointer;
+					color:#fff;
+					border:0 none;
+					font-size:14px;
+					font-weight:bold;
+					background: url(https://login.zol.com/image/bg.png) no-repeat;
+				}
+				.button:hover{
+					background:#c51e1e;
+				}
+				.cooperation{
+					width: 290px;
+				    text-align: center;
+				    margin-top: 15px;
+				    color: #666666;
+				    .xian{
+				    	float: left;
+					    height: 1px;
+					    background: #f0f0f0;
+					    width: 100px;
+					    margin-top: 7px;
+				    }
+				    p{
+				    	float:left;
+				    }
+				    .xian:first-child{
+				    	margin-right:9px;
+				    }
+				    .xian:last-child{
+				    	margin-left:9px;
+				    }
+				}
+			}
+			.login_foot{
+				a{
+					float:left;
+				}
+				.f_wx{
+					clear:both;
+					float: left;
+				    margin: 10px 12px 0px;
+				    width: 38px;
+				    height: 38px;
+				    text-indent:-9999px;
+				    overflow: hidden;
+				    background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 0 no-repeat;
+				}
+				.f_wx:hover{
+					background: url(http://icon.zol-img.com.cn/newshop/login/bgs2.png) 0 -38px no-repeat;
+				}
+				.f_wb, .f_qq, .f_zfb, .f_bd{
+					float: left;
+				    margin: 10px 12px 0 0;
+				    width: 38px;
+				    height: 38px;
+				    text-indent:-9999px;
+				    overflow: hidden;
+				    background:url(https://login.zol.com/image/bg.png) no-repeat;
+				}
+				.f_wb{
+					background-position:0 -82px;
+				}
+				.f_wb:hover{
+					background-position: 0 -121px;
+				}
+				.f_qq{
+					background-position: -39px -82px;
+				}
+				.f_qq:hover{
+					background-position: -39px -121px;
+				}
+				.f_zfb{
+					background-position: -78px -82px;
+				}
+				.f_zfb:hover{
+					background-position: -78px -121px;
+				}
+				.f_bd{
+					background-position: -117px -82px;
+				}
+				.f_bd:hover{
+					background-position: -117px -121px;
+				}
+			}
+			.warn{
+			    position: absolute;
+			    top: 58px;
+			    left: 85px;
+			    padding: 0 0 0 25px;
+			    width: 263px;
+			    height: 22px;
+			    text-align:center;
+			    color: #f33;
+			    border: 1px solid #f99;
+			    background:url(https://login.zol.com/image/bg.png) no-repeat #fff2f2;
+			    background-position: -270px -89px;
+			}
+		}
+	}
+}
+
+// 底部
+.footer{
+	margin-top:30px;
+	height:100px;
+	border-top:1px solid #e6e6e6;
+	.foot{
+		width:990px;
+		height:100px;
+		margin:0 auto;
+		.about{
+			margin-top:20px;
+			clear:both;
+			float:left;
+			li{
+				float:left;
+				a{
+					margin:0 10px;
+					color:#666;
+				}
+				a:hover{
+					color:#cc0000;
+					text-decoration:underline;
+				}
+			}
+		}
+		.copyright{
+			margin-top:20px;
+			float:right;
+		}
+	}
+}

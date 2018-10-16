@@ -16,7 +16,7 @@
 			</div>
 			<div class="logo_right">
 				已经有Z商城账号？
-				<a href="">立即登录</a>
+				<a href="enter.html">立即登录</a>
 			</div>
 		</div>
 	</div>
@@ -41,8 +41,8 @@
 								<em>*</em>
 								手机号：
 							</div>
-							<input type="text" class="phone" id="phone_num">
-							<i class="warn" style="display: none">请填写手机号</i>
+							<input type="text" class="phone" id="p_num">
+							<i class="warn" id="p_warn"></i>
 							<i class="tips">请填写手机号</i>
 						</div>
 						<div class="re_form">
@@ -51,7 +51,7 @@
 								验证码：
 							</div>
 							<input type="text" class="phone" id="yzm">
-							<i class="warn" style="display: none">请填写正确验证码</i>
+							<i class="warn" id="yzm_i"></i>
 							<i class="tips">请完成验证</i>
 
 							<div id = 'div1' class = "box"></div>
@@ -63,8 +63,8 @@
 								<em>*</em>
 								密码：
 							</div>
-							<input type="text" class="phone" id="password">
-							<i class="warn" style="display: none">请填写密码</i>
+							<input type="password" class="phone" id="password">
+							<i class="warn" id="password_i"></i>
 							<i class="tips">6-16位字母和数字的组合，不可用特殊字符</i>
 						</div>
 						<div class="re_form">
@@ -72,14 +72,22 @@
 								<em>*</em>
 								确认密码：
 							</div>
-							<input type="text" class="phone" id="sure_password">
-							<i class="warn" style="display: none">两次密码不一致</i>
+							<input type="password" class="phone" id="sure_password">
+							<i class="warn" id="sure_i"></i>
 							<i class="tips">再次输入密码</i>
 						</div>
+						<div class="protocol">
+							<input type="checkbox" checked>
+							同意
+							<a href="">《商城用户协议》</a>
+							<a href="">《隐私权说明》</a>
+						</div>
+						
 					</div>
+					<input type="button" value="注册" class="button">
 				</div>
 				<div class="right">
-					<p>如果您已经注册，请<a href="" class="login">直接登录</a></p>
+					<p>如果您已经注册，请<a href="enter.html" class="login">直接登录</a></p>
 					<p>或者用以下方式登录：</p>
 					<a href="" class="item a1"></a>
 					<a href="" class="item a2"></a>
@@ -90,5 +98,18 @@
 			</div>
 		</div>
 	</div>
+<!-- 底部 -->
+<div class="footer">
+	<div class="foot">
+		<ul class="about">
+			<li><a href="">关于Z商城</a>|</li>
+			<li><a href="">联系我们</a>|</li>
+			<li><a href="">帮助中心</a></li>
+		</ul>
+		<div class="copyright">
+			©2018. 中关村在线 版权所有
+		</div>
+	</div>
+</div>
 </body>
 </html>
