@@ -1,0 +1,496 @@
+h1, h2, h3, h4, h5, h6, div, html, body, ul, dl, ol, li, dl, dt, dd, form, input, p, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, dl {
+  list-style: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+a, u {
+  text-decoration: none; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+em, i {
+  font-style: normal; }
+
+body {
+  font-size: 12px;
+  color: #333;
+  background: #fafafa; }
+
+#topbox {
+  height: 30px;
+  background: #f5f5f5; }
+  #topbox .top {
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto; }
+    #topbox .top .top-index {
+      float: left;
+      line-height: 30px; }
+      #topbox .top .top-index .top-index-home {
+        padding: 0 20px 0 0; }
+      #topbox .top .top-index .top-index-login {
+        padding: 0 20px 0 0;
+        color: #666; }
+    #topbox .top .top-right {
+      float: right;
+      margin: 0 -10px 0 0; }
+      #topbox .top .top-right li {
+        float: left;
+        margin: 0 10px;
+        height: 30px;
+        line-height: 30px; }
+        #topbox .top .top-right li a {
+          color: #666;
+          display: inline-block;
+          text-decoration: none; }
+        #topbox .top .top-right li a:hover {
+          color: #f33;
+          text-decoration: underline; }
+      #topbox .top .top-right .zc-my-center {
+        margin: 0; }
+      #topbox .top .top-right .zc-hd {
+        position: relative;
+        padding: 0 23px 0 10px; }
+        #topbox .top .top-right .zc-hd .ico {
+          position: absolute;
+          top: 13px;
+          right: 10px;
+          width: 7px;
+          height: 4px;
+          background: url(http://icon.zol-img.com.cn/newshop/shop/index/topbar_ico.png) no-repeat;
+          background-position: 0 -45px; }
+      #topbox .top .top-right .zc-hd:hover {
+        color: #666;
+        text-decoration: none; }
+      #topbox .top .top-right .zc-hd-hover {
+        background: #fff; }
+      #topbox .top .top-right .zc-my-center-bd {
+        position: absolute;
+        top: 29px;
+        left: 628px;
+        padding: 3px 9px;
+        width: 88px;
+        border: 1px solid #ededed;
+        background: #fff;
+        z-index: 10;
+        border-top: none; }
+        #topbox .top .top-right .zc-my-center-bd a .focusShopNum {
+          color: #f33; }
+        #topbox .top .top-right .zc-my-center-bd a:hover {
+          color: #cc0000; }
+      #topbox .top .top-right .zc-mobile {
+        magrin: 0; }
+        #topbox .top .top-right .zc-mobile .zc-hd {
+          padding: 0 23px 0 25px;
+          background: url(http://icon.zol-img.com.cn/newshop/shop/index/topbar_ico.png) no-repeat;
+          background-position: 0 1px; }
+        #topbox .top .top-right .zc-mobile .zc-hd-hover {
+          background: url(http://icon.zol-img.com.cn/newshop/shop/index/topbar_ico.png) no-repeat #fff;
+          background-position: 0 1px; }
+        #topbox .top .top-right .zc-mobile .zc-mobile-bd {
+          position: absolute;
+          top: 29px;
+          left: 886px;
+          padding: 20px;
+          width: 130px;
+          height: 130px;
+          border: 1px solid #ededed;
+          background: #fff;
+          z-index: 10;
+          border-top: none; }
+      #topbox .top .top-right .zc-service-tel {
+        display: none;
+        position: absolute;
+        top: 29px;
+        right: 13px;
+        padding: 3px 9px;
+        width: 80px;
+        border: 1px solid #ededed;
+        font: 12px/28px arial;
+        text-align: right;
+        background: #fff;
+        border-top: none; }
+      #topbox .top .top-right .zc-hd-hover {
+        background: #fff; }
+
+#header {
+  height: 60px;
+  padding: 30px 0;
+  background: #fff; }
+  #header .head {
+    width: 960px;
+    height: 60px;
+    margin: 0 auto; }
+    #header .head h1 {
+      float: left; }
+      #header .head h1 a {
+        display: block;
+        width: 130px;
+        height: 60px;
+        background: url("../images/logo.png") no-repeat;
+        font-size: 0; }
+    #header .head .step {
+      padding: 2px 0 0;
+      float: right; }
+      #header .head .step ul li {
+        float: left;
+        width: 90px;
+        text-align: center;
+        background: url(http://icon.zol-img.com.cn/newshop/order/step-bg.png) no-repeat;
+        padding: 0 14px 0 0;
+        background-position: 100% -74px;
+        background-color: #e6e6e6;
+        font-size: 14px; }
+      #header .head .step ul .s1 {
+        height: 36px;
+        padding: 0 14px;
+        line-height: 36px;
+        background-position: 100% 0;
+        background-color: #ffcccc;
+        color: #c00; }
+      #header .head .step ul .s2 {
+        height: 36px;
+        line-height: 36px;
+        background-position: 100% -37px;
+        background-color: #e02d2d;
+        color: #fff; }
+      #header .head .step ul .s3, #header .head .step ul .s4 {
+        height: 36px;
+        line-height: 36px; }
+      #header .head .step ul .s5 {
+        height: 36px;
+        line-height: 36px;
+        padding: 0;
+        background: #e6e6e6; }
+
+.centerbox {
+  margin-top: 20px; }
+  .centerbox .center {
+    width: 960px;
+    margin: 0 auto; }
+    .centerbox .center .address {
+      margin: 0 0 20px; }
+    .centerbox .center .address-list li {
+      position: relative;
+      margin: 0 0 2px;
+      padding: 6px 0 6px 10px;
+      color: #666; }
+      .centerbox .center .address-list li input {
+        vertical-align: middle; }
+    .centerbox .center .address-list .li1 {
+      background: #f7f7f7; }
+      .centerbox .center .address-list .li1 .list_right {
+        float: right; }
+        .centerbox .center .address-list .li1 .list_right a {
+          color: #36c;
+          padding: 0 10px; }
+        .centerbox .center .address-list .li1 .list_right a:hover {
+          color: #c00;
+          text-decoration: underline; }
+    .centerbox .center .add_hd, .centerbox .center .pay_hd, .centerbox .center .invoice_hd, .centerbox .center .sure_hd {
+      height: 40px;
+      line-height: 40px;
+      margin: 0 0 20px;
+      border-bottom: 1px solid #ebebeb; }
+      .centerbox .center .add_hd .add, .centerbox .center .pay_hd .add, .centerbox .center .invoice_hd .add, .centerbox .center .sure_hd .add {
+        float: right; }
+      .centerbox .center .add_hd .ship_add, .centerbox .center .add_hd .pay_add, .centerbox .center .add_hd .invoice_add, .centerbox .center .add_hd .sure_add, .centerbox .center .pay_hd .ship_add, .centerbox .center .pay_hd .pay_add, .centerbox .center .pay_hd .invoice_add, .centerbox .center .pay_hd .sure_add, .centerbox .center .invoice_hd .ship_add, .centerbox .center .invoice_hd .pay_add, .centerbox .center .invoice_hd .invoice_add, .centerbox .center .invoice_hd .sure_add, .centerbox .center .sure_hd .ship_add, .centerbox .center .sure_hd .pay_add, .centerbox .center .sure_hd .invoice_add, .centerbox .center .sure_hd .sure_add {
+        font-size: 16px;
+        font-weight: bold; }
+      .centerbox .center .add_hd a, .centerbox .center .pay_hd a, .centerbox .center .invoice_hd a, .centerbox .center .sure_hd a {
+        color: #36c; }
+      .centerbox .center .add_hd a:hover, .centerbox .center .pay_hd a:hover, .centerbox .center .invoice_hd a:hover, .centerbox .center .sure_hd a:hover {
+        color: #c00;
+        text-decoration: underline; }
+    .centerbox .center .pay_style {
+      margin: 0 0 60px; }
+    .centerbox .center .pay_style .online_pay ul {
+      padding: 20px 10px; }
+      .centerbox .center .pay_style .online_pay ul li {
+        float: left;
+        margin: 0 10px 0 0;
+        width: 110px;
+        height: 36px;
+        border: 1px solid #dbd8d8;
+        font-size: 14px;
+        text-align: center; }
+      .centerbox .center .pay_style .online_pay ul .pay {
+        position: relative;
+        width: 108px;
+        height: 34px;
+        border: 2px solid #c00;
+        line-height: 34px;
+        cursor: pointer; }
+        .centerbox .center .pay_style .online_pay ul .pay i {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 11px;
+          height: 11px;
+          background: url(http://icon.zol-img.com.cn/newshop/shop/confirm_order/ico.png) no-repeat;
+          background-position: -118px -333px; }
+    .centerbox .center .invoice {
+      margin: 0 0 40px; }
+      .centerbox .center .invoice .invoice_title {
+        font-size: 14px; }
+        .centerbox .center .invoice .invoice_title a {
+          color: #36c;
+          margin-left: 20px; }
+        .centerbox .center .invoice .invoice_title a:hover {
+          text-decoration: underline; }
+        .centerbox .center .invoice .invoice_title span {
+          padding-left: 10px; }
+    .centerbox .center table {
+      border-spacing: 2px;
+      border-color: grey;
+      width: 100%;
+      border-collapse: collapse; }
+      .centerbox .center table tbody {
+        vertical-align: middle; }
+        .centerbox .center table tbody tr {
+          display: table-row;
+          vertical-align: inherit;
+          border-color: inherit; }
+          .centerbox .center table tbody tr th {
+            padding: 0 10px;
+            font: 12px/34px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+            text-align: center;
+            border-bottom: 2px solid #c0daf8; }
+          .centerbox .center table tbody tr .cell-1 {
+            width: 300px; }
+            .centerbox .center table tbody tr .cell-1 .store-name {
+              text-align: left; }
+              .centerbox .center table tbody tr .cell-1 .store-name a {
+                float: left;
+                color: #36c; }
+                .centerbox .center table tbody tr .cell-1 .store-name a img {
+                  margin: 0 0 0 10px; }
+              .centerbox .center table tbody tr .cell-1 .store-name a:hover {
+                color: #c00;
+                text-decoration: underline; }
+          .centerbox .center table tbody tr .cell-1 .goods-info {
+            width: 294px;
+            height: 82px;
+            text-align: left; }
+            .centerbox .center table tbody tr .cell-1 .goods-info .pic {
+              color: #36c;
+              float: left;
+              width: 80px;
+              height: 80px;
+              margin: 0 10px 0 0; }
+              .centerbox .center table tbody tr .cell-1 .goods-info .pic span {
+                width: 80px;
+                height: 80px;
+                border: 1px solid #ebeffa;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+                overflow: hidden;
+                background: #fff; }
+                .centerbox .center table tbody tr .cell-1 .goods-info .pic span img {
+                  width: 60px;
+                  height: 60px;
+                  vertical-align: middle; }
+            .centerbox .center table tbody tr .cell-1 .goods-info .title {
+              float: left;
+              width: 202px;
+              height: 34px;
+              overflow: hidden;
+              font-size: 12px; }
+              .centerbox .center table tbody tr .cell-1 .goods-info .title a {
+                color: #333; }
+              .centerbox .center table tbody tr .cell-1 .goods-info .title a:hover {
+                color: #c00;
+                text-decoration: underline; }
+            .centerbox .center table tbody tr .cell-1 .goods-info .color-suits {
+              float: left;
+              width: 202px;
+              padding: 7px 0 0; }
+              .centerbox .center table tbody tr .cell-1 .goods-info .color-suits dl {
+                position: relative;
+                padding: 0 0 0 36px;
+                color: #666;
+                font: 12px/18px arial; }
+                .centerbox .center table tbody tr .cell-1 .goods-info .color-suits dl dt {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  color: #999; }
+              .centerbox .center table tbody tr .cell-1 .goods-info .color-suits .suits span {
+                display: inline-block;
+                padding: 0 10px 0 0;
+                background: url(http://icon.zol-img.com.cn/newshop/shop/confirm_order/ico.png) no-repeat;
+                background-position: 100% -363px;
+                cursor: pointer; }
+              .centerbox .center table tbody tr .cell-1 .goods-info .color-suits .suits .suit-details {
+                position: absolute;
+                top: 18px;
+                left: 0;
+                z-index: 10;
+                padding: 6px 10px;
+                width: 158px;
+                border: 1px solid #d6d6d6;
+                background: #fff;
+                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); }
+                .centerbox .center table tbody tr .cell-1 .goods-info .color-suits .suits .suit-details .ico {
+                  position: absolute;
+                  top: -5px;
+                  left: 53px;
+                  display: block;
+                  width: 9px;
+                  height: 5px;
+                  background: url(http://icon.zol-img.com.cn/newshop/shop/confirm_order/ico.png) no-repeat;
+                  background-position: -133px -231px; }
+            .centerbox .center table tbody tr .cell-1 .goods-info .safeguard {
+              margin-right: 5px;
+              float: left; }
+            .centerbox .center table tbody tr .cell-1 .goods-info .safeguard1 {
+              color: #36c;
+              background: url(http://icon.zol-img.com.cn/newshop/shop/confirm_order/ico.png) no-repeat;
+              background-position: -144px -286px; }
+            .centerbox .center table tbody tr .cell-1 .goods-info .safeguard1:hover {
+              color: #c00;
+              text-decoration: underline; }
+          .centerbox .center table tbody tr .cell-2 {
+            text-align: center;
+            width: 170px; }
+          .centerbox .center table tbody tr .cell-3 {
+            text-align: center;
+            width: 120px; }
+          .centerbox .center table tbody tr .cell-4 {
+            text-align: center;
+            width: 164px; }
+          .centerbox .center table tbody tr td.cell-5 {
+            text-align: center;
+            font-weight: bold;
+            color: #c00;
+            width: 136px;
+            text-align: right; }
+          .centerbox .center table tbody tr .order-extra {
+            padding: 0 10px;
+            border-top: 1px solid #c0daf8;
+            background: #f2f6ff;
+            text-align: left; }
+            .centerbox .center table tbody tr .order-extra .message-box {
+              float: left;
+              position: relative;
+              zoom: 1;
+              margin: 20px 0 0;
+              padding: 0 0 0 77px; }
+              .centerbox .center table tbody tr .order-extra .message-box .label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+                color: #999; }
+              .centerbox .center table tbody tr .order-extra .message-box textarea {
+                display: block;
+                padding: 4px 10px;
+                width: 320px;
+                border: 1px solid #cee2f8;
+                background: #fff;
+                font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+                resize: none;
+                color: #999; }
+              .centerbox .center table tbody tr .order-extra .message-box .words {
+                display: block;
+                padding: 6px 0 0;
+                font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+                color: #999; }
+          .centerbox .center table tbody tr .order-extra-info {
+            float: right;
+            width: 300px;
+            padding: 10px 0 0;
+            text-align: left; }
+            .centerbox .center table tbody tr .order-extra-info dl {
+              height: 30px; }
+            .centerbox .center table tbody tr .order-extra-info dt {
+              clear: both;
+              float: left;
+              width: 60px;
+              color: #999;
+              text-align: right; }
+            .centerbox .center table tbody tr .order-extra-info dd {
+              float: left;
+              width: 170px; }
+              .centerbox .center table tbody tr .order-extra-info dd select {
+                vertical-align: middle;
+                font-size: 100%; }
+            .centerbox .center table tbody tr .order-extra-info .price {
+              width: 70px;
+              text-align: right;
+              color: #c00; }
+
+.submit {
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 32px 0 0; }
+  .submit .sub_price {
+    height: 55px;
+    text-align: right; }
+    .submit .sub_price span {
+      float: right;
+      padding: 0 0 0 20px;
+      font: 12px/28px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+      color: #666; }
+      .submit .sub_price span em {
+        color: #c00; }
+    .submit .sub_price .price {
+      position: relative;
+      top: -4px; }
+      .submit .sub_price .price em {
+        color: #c00;
+        font-size: 24px; }
+  .submit .sub_button {
+    float: right;
+    display: block;
+    margin: 0 0 0 10px;
+    width: 160px;
+    height: 46px;
+    overflow: hidden;
+    border: 0 none; }
+    .submit .sub_button input {
+      width: 160px;
+      height: 46px;
+      border: none;
+      cursor: pointer;
+      background: #c51e1e;
+      color: #fff;
+      font-size: 18px; }
+
+.footer {
+  margin: 40px auto 0;
+  padding: 5px 0 20px;
+  width: 960px;
+  text-align: center;
+  border-top: 1px solid #e3e3e3; }
+  .footer ul {
+    margin-left: 240px; }
+    .footer ul li {
+      float: left;
+      padding: 14px 10px 6px; }
+      .footer ul li a {
+        color: #36c; }
+      .footer ul li a:hover {
+        color: #c00;
+        text-decoration: underline; }
+  .footer p {
+    clear: both; }
+    .footer p a {
+      color: #36c; }
+    .footer p a:hover {
+      color: #c00;
+      text-decoration: underline; }
+  .footer .beian {
+    margin-left: 290px; }
+    .footer .beian img {
+      float: left;
+      padding: 20px 10px; }

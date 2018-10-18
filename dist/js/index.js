@@ -29,17 +29,3 @@ require(['buyer','phone_shop','connect', 'city', 'carousel', 'ajax', "happy", "n
 	right_suspend.right_suspend();
 	top_fix.top_fix();
 })
-	
-
-// 	// 弹层
-// 	$(document).ready(function(){
-// 	    $(document).scroll(function(){
-// 	        var top = $(document).scrollTop();
-// 	        if(top < 590){
-// 	        	$("#searchfix").attr("style", "display: none");
-// 	        }else{
-// 	        	$("#searchfix").attr("style", "display: block");	        	
-// 	        }
-// 	   	});
-// 	});
-// })

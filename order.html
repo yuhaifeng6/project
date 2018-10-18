@@ -3,8 +3,247 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/order.min.css">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/order.js"></script>
 </head>
 <body>
-	
+<!-- 头部 -->
+<div id = "topbox">
+		<div class="top">
+			<div class="top-index">
+				<span class="top-index-home"><a href="http://www.zol.com">商城首页</a></span>
+				<span class="top-index-login">Hi~欢迎来到Z商城，请<a href="#">登录</a></span>
+				<span class="top-index-register">
+					<a href="#">免费注册</a>
+				</span>
+			</div>
+			<ul class="top-right">
+				<li><a href="#">我的订单</a></li>
+				<li class="zc-my-center">
+					<a href="#" class="zc-hd">
+						买家中心
+						<i class="ico"></i>
+					</a>
+					<div class="zc-my-center-bd" id="zc-my-center-bd" style="display: none;">
+						<a href="#">
+						关注的店铺&nbsp;&nbsp;
+							<em class="focusShopNum">30</em>
+						</a>
+						<a href="#">
+						关注的商品&nbsp;&nbsp;
+							<em class="focusShopNum">48</em>
+						</a>                
+					</div>
+				</li>
+				<li>
+					<a href="">购物车0件</a>
+				</li>
+				<li>
+					<a href="">帮助中心</a>
+				</li>
+				<li>|</li>
+				<li class="zc-mobile">
+					<a href="#" class="zc-hd">
+						手机商城
+						<i class="ico"></i>
+					</a>
+					<div class="zc-mobile-bd" id="zc-mobile-bd" style="display: none;">
+						<img src="http://icon.zol-img.com.cn/zol_shop_logo/shop_wechat.png" width="130" height="130">
+					</div>
+				</li>
+				<li>
+					<a href="">
+						中关村在线
+					</a>
+				</li>
+				<li>
+					<a href="">
+						招商合作
+					</a>
+				</li>
+				<li class="lianxikefu">
+					<a href="" class="zc-hd">
+						联系客服
+						<i class="ico"></i>
+					</a>
+					<div class="zc-service-tel" id="lianxikefu" style="display: none;">
+						400-688-1999
+					</div>
+				</li>
+			</ul>
+		</div>
+</div>
+<!-- logo部分 -->
+<div id = "header">
+	<div class= 'head'>
+		<h1><a href="http://www.zol.com/">ZOL商城</a></h1>
+		<div class="step">
+			<ul>
+				<li class="s1">加入购物车</li>
+				<li class="s2">下订单</li>
+				<li class="s3">去付款</li>
+				<li class="s4">确认收货</li>
+				<li class="s5">评价</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- 中间 -->
+<div class="centerbox">
+	<div class="center">
+		<!-- 收货地址 -->
+		<div class="address">
+			<div class="add_hd">
+				<a href="" class="add">新增收货地址</a>
+				<div class="ship_add">收货地址</div>
+			</div>
+			<ul class="address-list">
+				<li class="li1">
+					<div class="list_right">
+						<a href="">编辑</a>
+						<a href="">删除</a>
+					</div>
+					<div class="list_left">
+						<input type="radio" checked="checked">
+						<em>小白</em>
+						<span>山东 青岛市 龙城路31号/卓越世纪中心 132********</span>
+					</div>
+				</li>
+				<li class="li2">
+					<input type="radio">
+					添加新地址（最多可添加10个地址,您还可以添加9个地址）
+				</li>
+			</ul>
+		</div>
+		<!-- 支付方式 -->
+		<div class="pay_style">
+			<div class="pay_hd">
+				<div class="pay_add">支付方式</div>
+			</div>
+			<div class="online_pay">
+				<ul>
+					<li class="pay">
+						网上支付
+						<i></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 发票信息 -->
+		<div class="invoice">
+			<div class="invoice_hd">
+				<div class="invoice_add">发票信息</div>
+			</div>
+			<div class="invoice_title">
+				<span>不开发票</span>
+				<a href="">修改</a>
+			</div>
+		</div>
+		<!-- 确认订单信息 -->
+		<div class="sure_order">
+			<div class="sure_hd">
+				<div class="sure_add">确认订单信息</div>
+			</div>
+			<div class="goods_list">
+				<table>
+					<tbody>
+						<tr>
+							<th class="cell-1">
+								<div class="store-name">
+									<span style="float:left">店铺：</span>
+									<a href="">华晨数码专营店</a>
+									<a href="">
+										<img src="images/button_121.gif" alt="">
+									</a>
+								</div>
+							</th>
+							<th class="cell-2">单价（元）</th>
+							<th class="cell-3">数量</th>
+							<th class="cell-4">商品优惠</th>
+							<th class="cell-5">小计（元）</th>
+						</tr>
+						<tr id="test">
+							<td colspan="5">
+								<div class="order-extra">
+									<div class="message-box">
+										<span class="label">给卖家留言：</span>
+										<textarea name="" id="" cols="50" rows="5">您可以填写对商品、配送的要求...</textarea>
+										<span class="words">还可以输入200字</span>
+									</div>
+									
+								</div>
+								<div class="order-extra-info">
+									<dl>
+										<dt>店铺优惠：</dt>
+										<dd>
+											<select>
+												<option>无</option>
+											</select>
+										</dd>
+										<dd class="price">0.00</dd>
+									</dl>
+									<dl>
+										<dt>运费：</dt>
+										<dd>
+											<select>
+												<option>
+													快递包邮
+												</option>
+											</select>
+										</dd>
+										<dd class="price">¥0</dd>
+									</dl>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 提交订单 -->
+<div class="submit">
+	<div class="sub_price">
+		<span class="price">
+			实付额（含运费）：
+			<em>¥30999.00</em>
+		</span>
+		<span class="commitment">商家承诺支付货款后<em>24小时</em>内发货</span>
+	</div>
+	<div class="sub_button">
+		<input type="button" value="提交订单">
+	</div>
+</div>
+
+<!-- 底部 -->
+<div class="footer">
+	<ul>
+		<li><a href="">关于商城</a></li>
+		<li>|</li>
+		<li><a href="">营销中心</a></li>
+		<li>|</li>
+		<li><a href="">服务中心</a></li>
+		<li>|</li>
+		<li><a href="">联系我们</a></li>
+		<li>|</li>
+		<li><a href="">发展历程</a></li>
+		<li>|</li>
+		<li><a href="">媒体报道</a></li>
+	</ul>
+	<p>
+		©2018中关村在线 版权所有. 京ICP备09041801号-182
+		<a href="">京ICP证010391号</a>
+	</p>
+	<div class="beian">
+		<img src="images/beian.png" alt="">
+		<img src="images/jingcha.png" alt="">
+		<img src="images/cert.png" alt="">
+	</div>
+</div>
 </body>
 </html>

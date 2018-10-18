@@ -1,56 +1,30 @@
-$(function(){
-
-// 侧边导航栏
-	$(".nav-classify").find(".nav-classify-header").hover(function(){
-		$(".nav-classify").find(".nav-classify-body").attr("style", "display:block");
-		$("#side").find(".item").mouseover(function(){
-		$("#side").find(".item").eq($(this).index()).attr("class", "item item_hover");
-			$(".nav-classify-body").find(".nav-items-hide").attr("style", "display: block");
-			$(".nav-classify-body").find(".nav-items-hide").find(".hide").eq($(this).index()).attr("style", "display: block");		
-			$(".nav-classify-body").find(".nav-items-hide").find(".hide").mouseover(function(){
-				$("#side").find(".item").eq($(this).index()).attr("class", "item item_hover");
-				$(".nav-classify-body").find(".nav-items-hide").attr("style", "display: block");
-				$(".nav-classify-body").find(".nav-items-hide").find(".hide").eq($(this).index()).attr("style", "display: block");		
-			});
-		})	
-		$(".nav-classify-header").mouseout(function(){
-			$(".nav-classify").find(".nav-classify-body").attr("style", "display:none");			
-		})
-		$("#side").mousemove(function(){
-			$(".nav-classify").find(".nav-classify-body").attr("style", "display:block");
-		})
-
-		$("#side").mouseout(function(){
-			$(".nav-classify").find(".nav-classify-body").attr("style", "display:none");
-		})
-		$(".nav-items-hide").mouseover(function(){
-			$(".nav-classify").find(".nav-classify-body").attr("style", "display:block");
-		})
-		$("#side").find(".item").mouseout(function(){
-			$("#side").find(".item").eq($(this).index()).attr("class", "item");
-			$(".nav-classify-body").find(".nav-items-hide").attr("style", "display: none");
-			$(".nav-classify-body").find(".nav-items-hide").find(".hide").eq($(this).index()).attr("style", "display: none");				
-		})
-		$(".nav-classify-body").find(".nav-items-hide").find(".hide").mouseout(function(){
-			$(".nav-classify").find(".nav-classify-body").attr("style", "display:none");
-			$("#side").find(".item").eq($(this).index()).attr("class", "item");
-			$(".nav-classify-body").find(".nav-items-hide").attr("style", "display: none");
-			$(".nav-classify-body").find(".nav-items-hide").find(".hide").eq($(this).index()).attr("style", "display: none");				
-		})
-	});
-// 右边悬浮
-		$(".suspand").find(".su_left").find(".le").find(".item").mouseover(function(){
-			$(".suspand").find(".su_left").find(".le").find(".item").eq($(this).index()).attr("style", "background:#ff3333;");
-			$(".suspand").find(".su_right").find(".ri").find(".item1").eq($(this).index()).stop().animate({marginLeft:"-107px",});
-		})
-		$(".suspand").find(".su_left").find(".le").find(".item").mouseout(function(){
-			$(".suspand").find(".su_left").find(".le").find(".item").eq($(this).index()).attr("style", "background:#2d2d2d");
-			$(".suspand").find(".su_right").find(".ri").find(".item1").eq($(this).index()).stop().animate({marginLeft:"0",});
-		}) 
-
-
-
+console.log("加载完成");
+require.config({
+	paths:{
+		"jquery":"jquery-1.11.3",
+		"buyer":"buyer",
+		"city":'city',
+		"phone_shop":"phone-shop",
+		"connect":"connect",
+		"side":"side",
+		"right_suspend":"right_suspend",
+		"mouse_data":"mouse_data",
+		"hover_sale":"hover_sale",
+		"show_more":"show_more",
+		"list_ajax":"list_ajax",
+	}
 })
-
+	require(["show_more", 'buyer', 'city', 'phone_shop', 'connect', 'side', 'right_suspend', "mouse_data", "hover_sale", "list_ajax"], function(show_more, buyer, city, phone_shop, connect, side, right_suspend, mouse_data, hover_sale, list_ajax){
+		show_more.show_more();
+		buyer.buyer();
+		city.city();
+		phone_shop.phone_shop();
+		connect.connect();
+		side.side();
+		right_suspend.right_suspend();
+		mouse_data.mouse_data();
+		hover_sale.hover_sale();
+		list_ajax.list_ajax();
+})
 
 
