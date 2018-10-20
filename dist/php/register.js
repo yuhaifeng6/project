@@ -79,6 +79,22 @@ window.onload = function(){
   			oPas_span2.innerHTML = "<font color = 'green'>√</font>";
   		}
   	}
+
+    // 注册
+    $(".left #register").click(function(){
+      var str = `phone_number=${$("input[name='phone_number']").val()}&password=${$("input[name='pwd']").val()}`;
+      $.ajax({
+        method:"post",
+        url:"reg_log.php?type=register",
+        data:str,
+        success:function(data){
+          alert(data);
+        },
+        error:function(msg){
+          alert(msg);
+        }
+      })
+    })
 }
 	var code = null;
 	function testCodeWithStr(n){

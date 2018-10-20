@@ -27,12 +27,12 @@
 	$type = $_GET["type"];
 	if($type == "login"){
 		//登陆	
-		$username = $_POST['username'];
-		$password = $_POST['pwd'];
+		$phone_number = $_POST['phone_number'];
+		$password = $_POST['password'];
 
 
 		//5、准备sql语句
-		$sql = "select * from account where phone_number='{$username}' AND password='{$password}'";
+		$sql = "select * from account where phone_number='{$phone_number}' AND password='{$password}'";
 		//6、发送sql语句
 		$res = mysql_query($sql);
 
@@ -49,7 +49,7 @@
 	}else{
 		//注册
 		$phone_number = $_POST['phone_number'];
-		$password = $_POST['pwd'];
+		$password = $_POST['password'];
 
 
 		//判断是否之前注册过

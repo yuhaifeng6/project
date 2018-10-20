@@ -113,8 +113,8 @@ $(function(){
 		var maxH = q.height() - $(".small-box").height();
 
 		// 获取小框位置
-		var smallW = ev.pageX - q.offset().left - $(".small-box").width()/2;
-		var smallH = ev.pageY - q.offset().top - $(".small-box").height()/2;
+		var smallW = ev.pageX - $(".big-pic").find(".big-img").offset().left - $(".small-box").width()/2;
+		var smallH = ev.pageY - $(".big-pic").find(".big-img").offset().top - $(".small-box").height()/2;
 		
 		if (smallW <= 0) {
 			smallW = 0;
@@ -128,8 +128,8 @@ $(function(){
 		if (smallH >= maxH) {
 			smallH = maxH;
 		}
-		// 鼠标移动获取小框移动距离
 		$('.small-box').css({left:smallW + 'px',top:smallH + 'px'});
+		// 给大盒子赋值
 		var lw = $(".small-box").position().left;
 		var lh = $(".small-box").position().top;
 		var super_w = -lw * 2;
